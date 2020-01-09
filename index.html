@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+  <html lang="fr">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="./assets/police/pacman.TTF">
+      <link rel="stylesheet" href="./assets/css/style.css">
+      <title>Jeu js</title>
+    </head>
+    <body>
+      <header>
+        <audio autoplay loop id="audio">
+          <source src="assets/musique/musique_fond2.mp3">
+        </audio>
+      </header>
+      <img class="logo" src="assets/img/elements/Super_Bomberman_Logo.png">
+      <img class="perso" src="assets/img/elements/bomberman.png">
+      <div class="bloc_vie">
+          <img class="image_vie" src="assets/img/elements/life.png">
+          <p id="vie"></p>
+      </div>
+      <div class="fond">
+        <div class="cadre">
+          <div class="game_over">
+            <p id="over"></p>
+            <img src="assets/img/personnage/sprite_bomber_avant.gif" id="carre">
+            <img src="assets/img/personnage/pikachu_bas.gif" id="ennemi">
+            <img src="assets/img/personnage/pikachu_bas.gif" id="ennemi2">
+            <img src="assets/img/personnage/pikachu_bas.gif" id="ennemi3">
+            <img src="assets/img/personnage/pikachu_bas.gif" id="ennemi4">
+
+            <div class="obstacle obs"></div>
+            <div class="obstacle2 obs"></div>
+            <div class="obstacle3 obs"></div>
+            <div class="obstacle4 obs"></div>
+            <div class="obstacle5 obs"></div>
+          </div>
+        </div>
+        
+      </div>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/scriptbombe.js"></script>
+</body>
+
+</html>

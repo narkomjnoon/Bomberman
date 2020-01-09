@@ -1,0 +1,315 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+@font-face {
+	font-family: "pacman";
+	src: url('../police/pacman.TTF');
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  background: url(../img/elements/fond.jpg)fixed 100% no-repeat;
+}
+
+.logo {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.perso {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.fond {
+  background-image: url(../img/map/fond_bomberman1.png);
+  height: 700px;
+  width: 700px;
+  position: absolute;
+  margin-left: 80vh;
+  margin-top: 10vh;
+  border-right: transparent 15px;
+  border-left: transparent 15px;
+  border-bottom: transparent 75px;
+  border-top: transparent 50px;
+}
+
+.cadre {
+  /* margin-left: 80vh; 
+  margin-top: 10vh;
+  margin-bottom:10vh;*/
+  height: 700px;
+  width: 700px;
+  border-right: transparent 15px;
+  border-left: transparent 15px;
+  border-bottom: transparent 75px;
+  border-top: transparent 50px;
+  position: relative;
+  /* background-image: url(../img/map/fond_bomberman1.png); */
+}
+
+.game_over{
+  display:flex;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  height:100%;
+}
+
+#over{
+  display:flex;
+  align-content: center;
+  text-align: center;
+  font-family: 'pacman';
+  background: 100% rgba(0, 0, 0, 0.5);
+  font-style: bold;
+  font-size: 100px;
+  color: red;
+  z-index:20000;
+}
+
+.bloc_vie {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-image: url(../img/elements/bloc_vie.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: 9000;
+}
+
+.bloc_vie .image_vie{
+  right: 50px;
+  top: 20px;
+  position: absolute;
+
+}
+
+#vie {
+  font-size: 100px;
+  font-style: bold;
+  color: white;
+  position: absolute;
+  top: 70px;
+  right: 220px;
+}
+
+#carre {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 300px;
+  left: 300px;
+}
+
+#ennemi {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+#ennemi2 {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 500px;
+  left: 500px;
+}
+
+#ennemi3 {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 350px;
+  left: 350px;
+}
+
+#ennemi4 {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 450px;
+  left: 50px;
+}
+
+.bombe {
+  width: 100px;
+  height:100px;
+  background-image: url(../img/bombe/bombe.gif);
+  position: absolute;
+  z-index:5000;
+}
+
+.obstacle {
+  height: 50px;
+  width: 50px;
+  background-image: url(../img/elements/obstacle.png);
+  position: absolute;
+  top: 300px;
+  left: 350px;
+}
+
+.obstacle2 {
+  height: 50px;
+  width: 50px;
+  background-image: url(../img/elements/obstacle.png);
+  position: absolute;
+  top: 550px;
+  left: 150px;
+}
+
+.obstacle3 {
+  height: 50px;
+  width: 50px;
+  background-image: url(../img/elements/obstacle.png);
+  position: absolute;
+  top: 350px;
+  left: 550px;
+}
+
+.obstacle4 {
+  height: 50px;
+  width: 50px;
+  background-image: url(../img/elements/obstacle.png);
+  position: absolute;
+  top: 250px;
+  left: 150px;
+}
+
+.obstacle5 {
+  height: 50px;
+  width: 50px;
+  background-image: url(../img/elements/obstacle.png);
+  position: absolute;
+  top: 100px;
+  left: 350px;
+}
